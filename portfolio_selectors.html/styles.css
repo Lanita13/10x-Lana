@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 24px;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 20px;
+    color: darkgreen;
+}
+
+
+p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+
+.project1 {
+    background-color: #f9c2ff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+}
+
+.project2 {
+    background-color: #c2f9ff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+}
+
+.project3 {
+    background-color: #ffc2c2;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+}
+
+
+#about {
+    background-color: lightgray;
+    text-align: center;
+}
+
+#skills {
+    background-color: lightyellow;
+}
+
+#skills ul li {
+    font-weight: bold;
+}
+
+#skills ul li::before {
+    content: "⭐ ";
+}
+
+
+a {
+    color: darkred;
+    text-decoration: none;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+
+img[src] {
+    border: 2px solid black;
+    border-radius: 50%;
+}
