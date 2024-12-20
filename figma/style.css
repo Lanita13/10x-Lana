@@ -1,0 +1,67 @@
+/* ფონის ფერი */
+body {
+    background-color: #5A00E0;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+/* ცხრილის სტილი */
+.table-container {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #D9C2FF;
+    color: #000000;
+    text-align: left;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #E0E0E0;
+    color: #000000;
+}
+
+/* მონაცვლე ხაზები */
+tr:nth-child(even) {
+    background-color: #F3E8FF;
+}
+
+/* მარკირებული რიგი */
+tr.selected {
+    background-color: purple;
+}
+
+/* ვარსკვლავების სტილი */
+.rating .star.{
+    display: inline-block;
+    color: purple; /* აქტიური ვარსკვლავები - იისფერი */
+    font-size: 16px;
+}
+.rating .star.inactive {
+    color: #FFFFFF; /* არააქტიური ვარსკვლავები - თეთრი */
+}
+
+/* ტექსტის სათაური */
+h1 {
+    color: #D9C2FF;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+tbody tr:hover {
+    background-color: #f0f4ff;
+}
+
