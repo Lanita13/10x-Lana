@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #171717;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card {
+    height: 450px;
+    width: 400px;
+    background-color: #171717;
+    position: relative;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card::before, .card::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-image: conic-gradient(from var(--angle), #0fbcf9, transparent, #0fbcf9, transparent);
+    animation: animate 7s linear infinite;
+    z-index: -1;
+}
+
+.card::before {
+    filter: blur(20px);
+    opacity: 0.3;
+}
+
+@keyframes animate {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+    color: #0fbcf9;
+    text-align: center;
+}
+
+.user-input {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.user-input .user {
+    width: 100%;
+    padding: 10px 35px 10px 10px;
+    font-size: 16px;
+    color: #ccc;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    outline: none;
+}
+
+.user-input i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #ccc;
+}
+
+.user-input label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #ccc;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.user-input .user:focus ~ label,
+.user-input .user:valid ~ label {
+    top: -10px;
+    font-size: 12px;
+    color: #0fbcf9;
+}
+
+.remember-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.remember-forget a {
+    color: #0fbcf9;
+    text-decoration: none;
+}
+
+.remember-forget a:hover {
+    text-decoration: underline;
+}
+
+.send {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #eee;
+    background-color: #0fbcf9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.send:hover {
+    background-color: transparent;
+    color: #0fbcf9;
+    border: 2px solid #0fbcf9;
+}
+
+.register {
+    margin-top: 10px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.register-text {
+    color: #0fbcf9;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-text:hover {
+    text-decoration: underline;
+}
